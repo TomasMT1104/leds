@@ -8,17 +8,14 @@ import java.time.LocalTime;
 @Data
 @AllArgsConstructor
 public class Led {
-    private int cd;
-
-    private boolean status;
-
+    private int identification;
+    private boolean state;
     private LocalTime phaseOn;
+    private LocalTime phaseOff;
 
-    private LocalTime pasheOff;
-
-    public Led(int cd, boolean status){
-        this.cd = cd;
-        this.status = status;
+    public Led(int identification, boolean state) {
+        this.identification = identification;
+        this.state = state;
     }
 
 }

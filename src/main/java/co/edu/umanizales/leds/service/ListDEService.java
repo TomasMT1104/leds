@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class LedsService {
+public class ListDEService {
     private ListDE leds;
-    public List<Led> getLedsList () {
+    public List<Led> getLeds () {
         List<Led> ledList = new ArrayList<>();
         NodeDE temp = leds.getHead();
 
